@@ -2,7 +2,7 @@
 
 # Summary
 
-The project builds an ETL pipeline for the music streaming app Sparkify using Python and SQL transferring data from 2 folders (log_data and song_data) that have JSON files localed in two local directories into 5 tables using a Postgres database: *songplays, users, songs, artists and time*.
+The project builds an ETL pipeline for the music streaming app Sparkify using Python and SQL transferring data from 2 folders (log_data and song_data) that have JSON files localed in two local directories into 5 tables using a Postgres database: *songplays, users, songs, artists and time* located at GCP Cloud SQL with Postgres instance: my-sql-instance (trim-mix-266820 project).
 
 # Files Structure
 
@@ -25,22 +25,8 @@ The project builds an ETL pipeline for the music streaming app Sparkify using Py
 
 The above schema was created and records were inserted from data/log_data and data/song_data JSON files into the tables one by one.
 
-# Load functions
+# Scripts to execute:
 
-- def process_log_file(cur, filepath)
-- def process_song_file(cur, filepath)
-- def process_data(cur, conn, filepath, func)
+1. Execute etl.ipynb - Creates all tables and insert records from data/log_data and data/song_data.
+2. Execute test.ipynb - Confirms creations and insertions were successful.
 
-# Scripts to execute in IPython
-
-1. run create_tables.py
-2. run etl.py
-
-# Project Steps
-
-1. Create, drop, insert table statements in sql_queries.py
-2. Run create_tables.py to create sparkifydb database and tables.
-3. Run test.ipynb to check if tables were created correctly. Restart kernel to close DB connection after executing this script.
-4. Build ETL processes by following instructions in elt.ipynb confirming insertions were successful. Don't forget to restart kernel after each execution of test.ipynb.
-5. Complete etl.py to build ETL pipeline from elt.ipynb to process the entire dataset. Rerun create_tables.py to reset tables then execute etl.py.
-6. Run again test.ipynb to confirm all insertions were successful. Restart kernel to close DB connection after executing this script. Four queries were added to test.ipynb for examples of song play analysis.
