@@ -44,11 +44,8 @@ def main():
     engine = sqlalchemy.create_engine(db_url)
 
     conn = engine.connect()
-
-    #conn.execute("COMMIT")
    
 # Execute a query
-    #cur = conn.cursor()
 
     drop_tables(conn)
     create_tables(conn)
