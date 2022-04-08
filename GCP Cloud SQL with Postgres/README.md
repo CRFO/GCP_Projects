@@ -1,4 +1,4 @@
-## Project: Data Modeling with Postgres
+## Project: GCP Cloud SQL with Postgres
 
 # Summary
 
