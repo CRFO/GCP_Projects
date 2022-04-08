@@ -25,7 +25,7 @@ The project builds an ETL pipeline for the music streaming app Sparkify using Py
 
 The above schema was created and records were inserted from data/log_data and data/song_data JSON files into the tables one by one.
 
-# Scripts:
+## Scripts
 
 1. Execute "python create_tables.py" - Creates all tables in Cloud SQL instance with Postgres
 2. Run all cells in etl.ipynb - Inserts records from data/log_data and data/song_data stored locally.
