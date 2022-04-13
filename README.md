@@ -2,4 +2,4 @@
 
 Google Cloud Platform Projects
 
-1. GCP CLoud SQL with Postgres
+1. GCP CLoud SQL with PostgreSQL
