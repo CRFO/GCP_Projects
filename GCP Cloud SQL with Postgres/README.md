@@ -6,7 +6,7 @@ The project builds an ETL pipeline for the music streaming app Sparkify using Py
 
 # Files Structure
 
-- *data/* folder contains log_data and song_data files in JSON format.
+- *data/* folder contains log_data and song_data files in JSON format (not copied here due to size)
 - *sql_queries.py* defines the SQL queries to create, drop and insert into tables.
 - *create_tables.py* creates the Sparkify DB and executes creation and deletion of all tables.
 - *etl.py* reads and processes the song and log JSON files and inserts them into the Postgres DB.
